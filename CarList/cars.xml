@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Cars>
+    <ID>6003</ID>
+    <Brand>Tesla</Brand>
+    <Model>X</Model>
+    <Production>2015</Production>
+  </Cars>
+  <Cars>
+    <ID>6004</ID>
+    <Brand>Tesla</Brand>
+    <Model>Y</Model>
+    <Production>2018</Production>
+  </Cars>
+  <Cars>
+    <ID>8003</ID>
+    <Brand>BMW</Brand>
+    <Model>Z3</Model>
+    <Production>2017</Production>
+  </Cars>
+  <Cars>
+    <ID>8006</ID>
+    <Brand>BMW</Brand>
+    <Model>X6</Model>
+    <Production>2013</Production>
+  </Cars>
+  <Cars>
+    <ID>8009</ID>
+    <Brand>Porshe</Brand>
+    <Model>Panamera</Model>
+    <Production>2020</Production>
+  </Cars>
+  <Cars>
+    <ID>8012</ID>
+    <Brand>Tesla</Brand>
+    <Model>S</Model>
+    <Production>2013</Production>
+  </Cars>
+</DocumentElement>

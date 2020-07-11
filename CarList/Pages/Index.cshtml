@@ -1,0 +1,48 @@
+﻿@page
+@model CarList.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "CarList";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Cars/Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Brand)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Model)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Car[0].Production)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Car) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Production)
+            </td>
+            <td>
+                <a asp-page="Cars/Edit" asp-route-id="@item.ID">Edit</a> |
+                <a asp-page="Cars/Details" asp-route-id="@item.ID">Details</a> |
+                <a asp-page="Cars/Delete" asp-route-id="@item.ID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
